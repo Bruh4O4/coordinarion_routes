@@ -1,0 +1,8 @@
+.infoField {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label {
+    width: 50px;
+}
