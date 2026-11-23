@@ -1,4 +1,20 @@
-.pending { background-color: #fef3c7; color: #b45309; }
-.revision { background-color: #e0e7ff; color: #4338ca; }
-.approved { background-color: #dcfce7; color: #15803d; }
-.rejected { background-color: #fee2e2; color: #b91c1c; }
+.pending { color: #b45309; }
+.revision { color: #4338ca; }
+.approved { color: #15803d; }
+.rejected { color: #b91c1c; }
+
+.status {
+    height: 100px;
+    font-size: var(--t);
+    display: grid;
+}
+
+span {
+    width: fit-content;
+    height: fit-content;
+}
+
+.statusInfo {
+    border-radius: var(--radius-sm);
+    font-size: var(--t-md);
+}

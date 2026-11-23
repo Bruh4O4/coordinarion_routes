@@ -11,8 +11,11 @@ const STATUS_LABELS: Record<RequestStatus, string> = {
 
 export const Status: React.FC<{ status: RequestStatus }> = ({ status }) => {
   return (
-    <span className={`${styles[status]}`}>
-        {STATUS_LABELS[status]}
-    </span>
+    <div className={styles.status}>
+      <span className={styles.label}>Статус:</span>
+      <span className={`${styles[status]} ${styles.statusInfo}`}>
+          {STATUS_LABELS[status]}
+      </span>
+    </div>
   );
 };
