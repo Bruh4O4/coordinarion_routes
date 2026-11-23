@@ -1,8 +1,9 @@
 .infoField {
+    font-size: var(--t);
     display: flex;
     flex-wrap: wrap;
 }
 
 .label {
-    width: 50px;
+    width: 110px;
 }

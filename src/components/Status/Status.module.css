@@ -6,7 +6,9 @@
 .status {
     height: 100px;
     font-size: var(--t);
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 span {
