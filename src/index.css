@@ -1,0 +1,23 @@
+:root {
+  --primary: #8b9d77;
+  --primary-hover: #2d4e40;
+  --secondary: #8b9d7750;
+  --secondary-hover: #8b9d77;
+  --aditional: #ffffff;
+  --aditional-hover: #f3f6fb;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --bg: #f8e4d3;
+  --bg-card: #f3f6fb;
+  --text-main: #2d4e40;
+  --text-sub: #f3f6fb;
+  --border: #2d4e40;
+  --radius-sm: 10px;
+  --radius-lg: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
