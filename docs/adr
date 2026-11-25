@@ -5,3 +5,5 @@ router только в main.ts
 Никакой бизнес логики в коде
 
 Связь компонентов через react Context
+
+Всё проходит через MainLayout (кроме Landing и Auth)
