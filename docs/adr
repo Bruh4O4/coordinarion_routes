@@ -7,3 +7,5 @@ router только в main.ts
 Связь компонентов через react Context
 
 Всё проходит через MainLayout (кроме Landing и Auth)
+
+fetch и axios только в api
