@@ -7,25 +7,24 @@
   justify-content: space-between;
   width: 270px;
   padding: 40px 25px;
-  font-size: 28px;
+  font-size: calc(var(--t) + 4px);
   background-color: var(--bg);
 }
 
 .userBlock {
   margin-bottom: 40px;
-  border-bottom: 1px solid var(--text-dark);
+  border-bottom: 1px solid var(--border);
   padding-bottom: 20px;
 }
 
 .userName {
   display: block;
   font-weight: 600;
-  font-size: 24px;
+  font-size: var(--t-md);
 }
 
 .userRole {
-  color: var(--text-dark);
-  font-size: 20px;
+  font-size: var(--t);
 }
 
 .nav {
@@ -38,7 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   padding: 10px 14px;
   outline: none;
   color: var(--text-main);
@@ -52,8 +51,11 @@
 }
 
 .active {
-  color: var(--text-light);
   background-color: var(--primary);
+}
+
+.active span {
+  color: var(--aditional);
 }
 
 .active:hover {
@@ -61,7 +63,7 @@
 }
 
 .badge {
-  border-radius: 999px;
+  border-radius: 50%;
   padding: 2px 7px;
   color: #fff;
   font-weight: 700;

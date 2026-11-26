@@ -2,11 +2,13 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Landing from './pages/Landing/Landing'
-import Auth from './pages/Auth/Auth'
+import { Landing } from './pages/Landing/Landing'
+import { Auth } from './pages/Auth/Auth'
 import { MainLayout } from './layout/MainLayout/MainLayout'
-import { Application } from './pages/Application/Application'
+// import { Application } from './pages/Application/Application'
 import { ApprovalPage } from './pages/ApprovalPage/ApprovalPage'
+import { Vacations } from './pages/Vacations/Vacations'
+import { AuthProvider } from './context/AuthContext'
 
 const router = createBrowserRouter([
   {
@@ -20,10 +22,10 @@ const router = createBrowserRouter([
   {
     element: <MainLayout/>,
     children: [
-      {
-        path: '/employee/application',
-        element: <Application/>
-      },
+      // {
+      //   path: '/employee/application',
+      //   element: <Application/>
+      // },
       // {
       //   path: '/employee/history',
       //   element: <History/>
@@ -40,6 +42,15 @@ const router = createBrowserRouter([
       //   path: '/employer/vacations',
       //   element: <Vacations/>
       // }
+
+      {
+        path: '/employer/business-trips',
+        element: <Vacations type="trip"/>
+      },
+      {
+        path: '/employer/vacations',
+        element: <Vacations type="vacation"/>
+      }
     ]
   },
   // {
@@ -58,6 +69,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
 )

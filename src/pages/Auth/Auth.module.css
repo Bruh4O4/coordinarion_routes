@@ -1,0 +1,58 @@
+.page {
+  height: 100vh;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.card {
+  background-color: var(--bg);
+  color: var(--text-light);
+  width: 748px;
+  height: 728px;
+  padding: 62px 55px;
+  border-radius: 30px;
+}
+
+.title {
+  font-size: var(--h-md);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 47px;
+  color: var(--text-light);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: calc(100% - 47px - 74px);
+}
+
+.loginInputLabel {
+  margin-bottom: 17.5px;
+  color: var(--text-light);
+}
+
+.loginInput {
+  padding: 25px 25px;
+  font-size: var(--h-sm);
+  color: var(--text-light);
+  border: 1px solid var(--border);
+}
+
+.loginBtn {
+  padding: 21px 47px;
+  width: min-content;
+  align-self: center;
+  margin-top: auto;
+}
+
+.error {
+  margin-top: -28px;
+  margin-bottom: -22px;
+  text-align: center;
+  font-size: calc(var(--t-xs) + 4px);
+}

@@ -5,7 +5,7 @@
 }
 
 .approvalPageHeader {
-  font-size: 36px;
+  font-size: calc(var(--t-xs) + 2px);
   font-weight: 500;
 }
 
@@ -18,12 +18,12 @@
 .card {
   background-color: #F3F6FB;
   border: 1px solid var(--text-dark);
-  border-radius: 15px;
+  border-radius: var(--radius-lg);
   padding: 25px 40px;
 }
 
 .sectionTitle {
-  font-size: 28px;
+  font-size: calc(var(--t) + 4px);
   font-weight: 500;
   margin-bottom: 5px;
 }
@@ -35,28 +35,26 @@
   gap: 29px;
 }
 
-/* Делаем каждую из двух колонок flex-контейнером */
 .analyticsSection {
   display: flex;
   flex-direction: column;
   min-width: 0;
 }
 
-/* А белую карточку внутри колонки растягиваем ровно на оставшееся место */
 .analyticsSection .card {
   flex: 1;
 }
 
 .importanceText {
-  font-size: 28px;
+  font-size: calc(var(--t) + 4px);
 }
 
 .importancePercent {
-  font-size: 128px;
+  font-size: var(--h-lg);
 }
 
 .recommendation {
-  font-size: 20px;
+  font-size: calc(var(--t-xs) + 4px);
 }
 
 .actions {
@@ -71,9 +69,9 @@
 
 .approvalBtn {
   padding: 15.5px 27px;
-  font-size: 24px;
+  font-size: var(--t);
 }
 
 .textarea {
-  font-family: Inter, Roboto, sans-serif;
+  font-family: Inter, sans-serif;
 }

@@ -11,6 +11,7 @@
   --bg-card: #f3f6fb;
   --text-main: #2d4e40;
   --text-sub: #f3f6fb;
+  --text-light: #38745A;
   --border: #2d4e40;
   --radius-sm: 10px;
   --radius-lg: 20px;
@@ -21,6 +22,7 @@
   --t-lg: 48px;
   --t-md: 32px;
   --t: 24px;
+  --t-xs: 16px;
 }
 
 * {
@@ -28,5 +30,5 @@
   margin: 0;
   padding: 0;
   color: var(--text-main);
-  font-family: sans-serif;
+  font-family: Inter, sans-serif;
 }

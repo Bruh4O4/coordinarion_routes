@@ -1,7 +1,7 @@
 .btn {
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   border: none;
-  font-size: 32px;
+  font-size: var(--t-md);
   font-weight: 400;
   cursor: pointer;
   transition: background-color 0.2s, opacity 0.2s;
@@ -14,7 +14,7 @@
 
 .primary { 
   background-color: var(--primary); 
-  color: #fff; 
+  color: var(--text-sub); 
 }
 
 .secondary { 
@@ -24,8 +24,8 @@
 
 .withBorder { 
   background-color: transparent;
-  color: #2D4E40; 
-  border: 1px solid #2D4E40;
+  color: var(--text-main); 
+  border: 1px solid var(--border);
 }
 
 .ghost { 
