@@ -3,7 +3,7 @@ import styles from './List.module.css'
 
 interface ListProps {
     children: ReactNode,
-    className: string
+    className?: string
 }
 
 export function List({ children, className = '' }: ListProps) {
