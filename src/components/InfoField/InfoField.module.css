@@ -2,8 +2,10 @@
     font-size: var(--t);
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .label {
-    width: 110px;
+    width: 130px;
+    min-width: fit-content;
 }

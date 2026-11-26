@@ -18,7 +18,9 @@
 }
 .fields {
     height: 100px;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 30px;
 }
